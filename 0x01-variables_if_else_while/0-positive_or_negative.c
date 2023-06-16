@@ -2,20 +2,31 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main(void) {
+/**
+ * main - Entry point of the program
+ *
+ * Return: 0 on success
+ */
+int main(void)
+{
     int n;
 
     srand(time(0));
     n = rand() - RAND_MAX / 2;
     printf("%d", n);
-    
-    if (n == 0) {
+
+    if (n == 0)
+    {
         printf(" is zero\n");
-    } else if (n < 0) {
+    }
+    else if (n < 0)
+    {
         printf(" is negative\n");
-    } else {
+    }
+    else
+    {
         printf(" is positive\n");
     }
-    
+
     return 0;
 }
