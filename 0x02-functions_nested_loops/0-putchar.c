@@ -1,23 +1,23 @@
-#include <unistd.h>
+#include <main.h>
 
 /**
- * main - Entry point 
+ * main - Entry point
  *
- * Descrtiption: prints _putchar using prutchar prototype
- * 
+ * Description: Prints "_putchar" using the _putchar function
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	const char *str = "_putchar\n";
-	char output[] = "_putchar";
-	int i;
+    char str[] = "_putchar";
+    int ch;
 
-	for (i = 0; output[i] != '\0'; i++)
-		write(1, &output[i], 1);
+    for (ch = 0; ch < 8; ch++)
+        putchar(str[ch]);
 
-	write(1, "\n", 1);
+    putchar('\n');
 
-	return (0);
+    return (0);
 }
+
 
